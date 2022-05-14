@@ -4,6 +4,23 @@ db.transaction(function (tx){
 	tx.executeSql('CREATE TABLE IF NOT EXISTS Products(code TEXT, product_name TEXT, ingredients_text TEXT)');	
 });
 
+/*
+
+db.transaction(function(tx){
+	let insert = 'INSERT INTO Products(code, product_name, ingredients_text)VALUES(\'asd\', \'asd\', \'asd\')';
+	tx.executeSql(insert);
+});
+
+db.transaction(function(tx){
+	tx.executeSql('SELECT * FROM Products', [], function(tx, results){
+		var len = results.rows.length;
+		for(let i = 0; i < len; i++){
+			alert(results.rows.item(i).code)
+		}
+	});
+});
+*/
+
 function search(){
 	let barcode = document.getElementById('barcode').value;
 	
