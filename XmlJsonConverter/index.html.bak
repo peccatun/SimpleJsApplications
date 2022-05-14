@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="to-xml-master/to-xml.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<a download="resultJSon.txt", id="download" onclick="downloadData()">Download Json</a>
+		<br/>
+		<br/>
+		<a download="resultJSon.txt", id="download-xml" onclick="downloadDataXml()">Download here</a>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "name": "to-xml",
+  "description": "toXML - Pure JavaScript XML Writer",
+  "version": "0.1.7",
+  "author": "Yusuke Kawasaki <u-suke@kawa.net>",
+  "bin": {
+    "json2xml": "./bin/json2xml.cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/kawanet/to-xml/issues"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "jshint": "^2.12.0",
+    "mocha": "^8.3.2",
+    "terser": "^5.7.0"
+  },
+  "files": [
+    "*.d.ts",
+    "*.js",
+    "LICENSE",
+    "README.md",
+    "bin/*.js",
+    "dist/*.js",
+    "package.json"
+  ],
+  "homepage": "https://github.com/kawanet/to-xml#readme",
+  "jshintConfig": {
+    "es3": true,
+    "node": true,
+    "undef": true,
+    "unused": true
+  },
+  "keywords": [
+    "json",
+    "serialize",
+    "stringify",
+    "writer",
+    "xml"
+  ],
+  "license": "MIT",
+  "main": "to-xml.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawanet/to-xml.git"
+  },
+  "scripts": {
+    "build": "make",
+    "clean": "make clean",
+    "fixpack": "fixpack",
+    "test": "make test",
+    "test-watch": "while :; do make test; sleep 1; done"
+  },
+  "types": "to-xml.d.ts"
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="to-xml-master/to-xml.js"></script>
+		<script src="from-xml-master/from-xml.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<a download="resultJSon.txt", id="download" onclick="downloadData()">Download here</a>
+		<br/>
+		<br/>
+		<a download="resultJSon.txt", id="download-xml" onclick="downloadDataXml()">Download xml</a>
+		<br/>
+		<br/>
+		<label>Upload json</label>
+		<input type="file" id="input-file"/>
+		<br/>
+		<br/>
+		<label>Upload xml</label>
+		<input type="file" id="input-file-xml"/>
+	</body>
+</html>

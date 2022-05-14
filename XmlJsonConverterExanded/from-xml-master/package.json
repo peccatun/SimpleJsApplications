@@ -1,0 +1,54 @@
+{
+  "name": "from-xml",
+  "description": "fromXML - Pure JavaScript XML Parser",
+  "version": "0.1.7",
+  "author": "Yusuke Kawasaki <u-suke@kawa.net>",
+  "bin": {
+    "xml2json": "./bin/xml2json.cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/kawanet/from-xml/issues"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "jshint": "^2.12.0",
+    "mocha": "^8.3.2",
+    "terser": "^5.7.0"
+  },
+  "files": [
+    "*.d.ts",
+    "*.js",
+    "LICENSE",
+    "README.md",
+    "bin/*.js",
+    "dist/*.js",
+    "package.json"
+  ],
+  "homepage": "https://github.com/kawanet/from-xml#readme",
+  "jshintConfig": {
+    "es3": true,
+    "node": true,
+    "undef": true,
+    "unused": true
+  },
+  "keywords": [
+    "deserialize",
+    "json",
+    "parser",
+    "xml"
+  ],
+  "license": "MIT",
+  "main": "from-xml.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawanet/from-xml.git"
+  },
+  "scripts": {
+    "build": "make",
+    "clean": "make clean",
+    "fixpack": "fixpack",
+    "test": "make test",
+    "test-watch": "while :; do make test; sleep 1; done"
+  },
+  "types": "from-xml.d.ts"
+}
